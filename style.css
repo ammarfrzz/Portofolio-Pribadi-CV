@@ -1,127 +1,310 @@
-/* === Global Styles === */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: rgb(222, 222, 222);
-    color: rgb(202, 202, 202);
+    font-family: ;
+    margin: 0px;
+    padding: 0px;
 }
 
-div {
-    padding: 10px;
-    text-align: center;
-}
-
-/* === Navigation === */
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 50px;
-}
-
-/* Unified hover effect for main navigation */
-nav a:hover,
-.aboutmehover:hover,
-.projecthover:hover,
-.contacthover:hover {
-    font-size: 25px;
-    font-style: italic;
-    color: red;
-}
-
-/* === Header === */
 header {
-    background: #222;
-    color: #fff;
-    padding: 25px;
-    text-align: center;
-}
-
-/* === Profile === */
-.foto-profil {
-    border: 4px solid #222; 
-    border-radius: 50%;      
-    width: 150px;  
-    height: 150px;
-    object-fit: cover; 
-    margin-bottom: 50px;       
-}
-
-.profil {
-    margin: 100px 0;
-}
-
-/* === Sections === */
-.aboutme,
-.project,
-.contact {
-    color: #000;
-}
-
-.aboutme {
-    text-transform: capitalize;
-}
-
-.project-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.project-box {
-    height: 100px;
-    width: 200px;
+.bghome {
+    background-image: url(bghomev2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.h1 {
+    padding-left: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
     margin: 20px;
 }
 
-.contact {
-    text-align: left;
-    padding: 0 130px;
+.h3iam {
+    text-transform: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* === Social Hover Effects === */
-.instagramhover:hover,
-.githubhover:hover {
-    font-size: 15px;
-    font-style: italic;
-    text-decoration: none;
-    color: rgb(112, 112, 112);
+.opening {
+    margin-top: 10px;
+    padding: 75px;
+    line-height: 60px;
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-/* === Footer === */
-.footer {
-    color: #fff;
-    background: #000;
+.hero {
+    display: flex;
+    border: 1px solid #000;
+    height: 100vh;
+    border: none;
 }
 
-/* === Utility Classes === */
-.border {
+.hello{
+    display: flex;
+    border: 1px solid #000;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    border: none;
+}
+
+.foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    width: 50%;
+    border: none;
+}
+
+.borderfoto {
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    padding: 15px;
+    transition: 1s ease;
+}
+
+.borderfoto:hover {
+    transform: scale(1.1);
+}
+
+.flex {
+    display: flex;
+    /* border: 1px solid #000; */
+}
+
+.flex-kiri {
+    width: 50%;
+    /* border: 1px solid #000; */
+}
+
+.flex-kanan {
+    width: 50%;
+    /* border: 1px solid #000; */
+    text-transform: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19px;
+    line-height: 37px;
+    padding-top: 40px;
+    padding-right: 35px;
+    padding-left: 35px;
+    margin-bottom: 180px;
+}
+
+.hellothere {
     border: 1px solid black;
+    width: 120px;
+    text-align: center;
+    height: 40px;
+    /* font-size: 20px; */
+    line-height: 3px;
+    border-radius: 0 0 25px 0;
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
 
-.project1:hover {
-    color: gray;
-    font-style: italic;
-    font-size: 14px;
-    text-decoration: none;
+.flex1 {
+    display: flex;
+    /* border: 1px solid black; */
 }
 
-.project2:hover {
-    color: gray;
-    font-style: italic;
-    font-size: 14px;
-    text-decoration: none;
+.flex-kiri1 {
+    width: 50%;
+    /* border: 1px solid black; */
+    padding-top: 150px;
+    padding-left: 50px;
 }
 
-.project3:hover {
-    color: gray;
-    font-style: italic;
-    font-size: 14px;
-    text-decoration: none;
+.flex-kanan1 {
+    width: 50%;
+    /* border: 1px solid black; */
+    padding-top : 50px;
+    padding-left: 15px;
+    margin-bottom: 220px;
+    font-size: 17px;
 }
 
-.project4:hover {
-    color: gray;
-    font-style: italic;
-    font-size: 14px;
-    text-decoration: none;
+.briefhistory {
+    border: 1px solid black;
+    border-radius: 0 0 25px 0;
+    width: 185px;
+    height: 50px;
+    text-align: center;
+    line-height: 23px;
+    background-color: #000;
+    color: white;
+}
+
+.form-kontak {
+    max-width: 400px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-kontak label {
+    margin: 5px 0 2px;
+}
+
+.form-kontak input,
+.form-kontak textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.form-kontak button {
+    padding: 10px;
+    background: rgb(20, 20, 65);
+    color: rgb(253, 253, 253);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-kontal button:hover {
+    background: orange;
+}
+
+.footercss {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+.hellograduate {
+    font-size: 15px;
+}
+
+.divskills {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(50%-10px);
+    gap: 5px;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.htmldiv {
+    width: 500px;
+    border: 2px solid rgb(0, 0, 0);
+    display: flex;
+    height: 150px;
+}
+
+.phtml {
+   color: rgb(79, 79, 79); 
+}
+
+.cssdiv {
+    border: 2px solid black;
+    width: 500px;
+    display: flex;
+}
+
+.logocssdiv {
+    margin-top: 17px;
+    margin-left: 26px;
+}
+
+.txtcss {
+    margin-left: 41px;
+}
+
+.pcss {
+    color: rgb(79, 79, 79);
+}
+
+.jsdiv {
+    border: 2px solid black;
+    width: 500px;
+    display: flex;
+    height: 140px;
+}
+
+.logojsdiv {
+    margin-top: 20px;
+    margin-left: 22px;
+}
+
+.txtjs {
+    margin-left: 30px;
+}
+
+.pjs {
+     color: rgb(79, 79, 79);
+}
+
+.phpdiv {
+    border: 2px solid black;
+    width: 500px;
+    display: flex;
+    height: 140px;
+}
+
+.logophpdiv {
+    margin-top: 12px;
+    margin-left: 13px;
+}
+
+.txtphp {
+    margin-left: 26px;
+}
+
+.pphp {
+    color: rgb(79, 79, 79);
+}
+
+.pythondiv {
+    border: 2px solid black;
+    width: 500px;
+    display: flex;
+    height: 140px;
+}
+
+.logopythondiv {
+     margin-top: 20px;
+     margin-left: 17px;
+}
+
+.txtpython {
+    margin-left: 25px;
+}
+
+.ppython {
+    color: rgb(79, 79, 79);
+}
+
+.designdiv {
+    border: 2px solid black;
+    width: 500px;
+    display: flex;
+    height: 140px;
+}
+
+.logodesigndiv {
+    margin-top: 13px;
+    margin-left: 8px;
+}
+
+.txtdesign {
+    margin-left: 19px;
+}
+
+.pdesign { 
+    color: rgb(79, 79, 79);
 }
